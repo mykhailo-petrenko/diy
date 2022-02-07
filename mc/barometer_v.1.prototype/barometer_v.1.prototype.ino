@@ -81,9 +81,9 @@ BpmMeasurements readBpm(void) {
 }
 
 String formatPressure(float p) {
-  p = round(p / 100.0) / 10.0;
+  p = round(p / 100.0);
 
-  return String(p, 1) + " hPa";
+  return String(p, 0) + " hPa";
 }
 
 String formatTemperature(float t) {
